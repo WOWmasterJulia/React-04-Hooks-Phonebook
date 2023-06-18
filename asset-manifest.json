@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-04-Hooks-Phonebook/static/css/main.917837b0.css",
-    "main.js": "/React-04-Hooks-Phonebook/static/js/main.bf2c6176.js",
+    "main.js": "/React-04-Hooks-Phonebook/static/js/main.726243bd.js",
     "index.html": "/React-04-Hooks-Phonebook/index.html",
     "main.917837b0.css.map": "/React-04-Hooks-Phonebook/static/css/main.917837b0.css.map",
-    "main.bf2c6176.js.map": "/React-04-Hooks-Phonebook/static/js/main.bf2c6176.js.map"
+    "main.726243bd.js.map": "/React-04-Hooks-Phonebook/static/js/main.726243bd.js.map"
   },
   "entrypoints": [
     "static/css/main.917837b0.css",
-    "static/js/main.bf2c6176.js"
+    "static/js/main.726243bd.js"
   ]
 }
