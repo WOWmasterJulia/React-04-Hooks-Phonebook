@@ -7,13 +7,32 @@ import { ContactFind } from './ContactFind/ContactFind';
 const LOCAL_KEY = 'contacts';
 
 export default function App() {
-  const [contacts, setContacts] = useState([])
+  const [contacts, setContacts] = useState(() => { 
+    const data = localStorage.getItem(LOCAL_KEY);
+    if (data) {
+      return JSON.parse(data)
+    } else {
+      return []
+    }
+  })
   const [filter, setFilter] = useState('')
+  
+  // НЕ РАБОТАЕТ!!!!!!!!!!!!!!
+// Перезапись и хранение контактов в Локале (всех)
+  // useEffect(() => {
+  //   const data = localStorage.getItem(LOCAL_KEY);
+  //   if (data) {
+  //     return setContacts(JSON.parse(data))
+  //   } else {
+  //     return setContacts([])
+  //   }
+  // }, []); 
 
 // Запись контактов в Локал (всех)
   useEffect(() => {
     window.localStorage.setItem(LOCAL_KEY, JSON.stringify(contacts));
   }, [contacts]);
+  
 
 // Запись контактов с проверкой на повторы 
  const saveContact = (contact) => {
